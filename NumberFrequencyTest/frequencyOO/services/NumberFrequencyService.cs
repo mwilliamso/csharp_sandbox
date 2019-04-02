@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace NumberFrequencyTest.frequencyOO.services
 {
     public class NumberFrequencyService

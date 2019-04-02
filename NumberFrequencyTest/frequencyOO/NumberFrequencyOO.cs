@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using NumberFrequencyTest.frequencyOO;
+﻿using NumberFrequencyTest.frequencyOO;
 using NumberFrequencyTest.frequencyOO.services;
 
 // We need to create a simple routine that calculates the frequency of the digits
@@ -22,44 +19,13 @@ namespace NumberFrequencyTest
 
         public NumberFrequencyOO()
         {
-            //numberFrequencies = new NumberFrequencies(INDEX_FOR_BASE10_ARRAY);
         }
 
         public void findFrequencies(long value) {
 
-            NumberFrequencies numberFrequencies= numberFrequencyService.CalculateFrequencies(value, INDEX_FOR_BASE10_ARRAY);
+            NumberFrequencies numberFrequencies = numberFrequencyService.CalculateFrequencies(value, INDEX_FOR_BASE10_ARRAY);
 
             numberFrequencyService.PrintOutFrequencies(numberFrequencies);
         }
-
     }
 }
-
-/*
- * This program aims to demonstrate the following good coding practicies
- * ---------------------------------------------------------------------
- * Methods have an abstraction at the same level
- * 
- * Method names are clear and show intent
- * 
- * Methods only do one thing - and do it well ;)
- * 
- * Method argument lists are short
- * 
- * Methods don't modify the state of arguments they receive (no side affects)
- * 
- * Methods are idempotent
- * 
- * Variable names are clear and show intent
- * 
- * Functionality is not spread across the code e.g. DecorateResult
- * 
- * Avoid Magic Numbers
- * 
- * This code has the following problems however
- * --------------------------------------------
- * 
- * It uses statics too much
- * 
- * Its purely procedural, not OO
-*/
